@@ -17,3 +17,52 @@ CMakeUserPresets.json
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #cmake-build-*
+
+# Build & CMake
+build/
+out/
+Debug/
+Release/
+RelWithDebInfo/
+MinSizeRel/
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# IDE / Editor
+.vscode/
+.idea/
+.vs/
+*.swp
+*.swo
+*.code-workspace
+
+# Binary / Executable
+*.exe
+*.pdb
+*.ilk
+*.obj
+*.o
+*.dll
+*.so
+*.dylib
+
+# Temp / Cache
+temp_dlc_*
+*.tmp
+*.log
+
+# VLN specific (สำคัญ!)
+vlndlc/                  # DLC ที่ขาย (ไม่ commit)
+thirdparty/live2d/       # ถ้าใส่ binary (license)
+assets/                  # ถ้าขนาดใหญ่เกิน 100MB (หรือ comment ออกถ้าต้องการ commit)
+*.vlnpack
+
+# OS generated
+.DS_Store
+Thumbs.db
